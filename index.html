@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Black Friday dos Livros - Até 70% OFF em milhares de títulos">
+    <title>Black Friday dos Livros - Até 70% OFF</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>BookStore</span>
+                    </div>
+
+                    <!-- Menu Desktop -->
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                        <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+
+                    <!-- Botão CTA -->
+                    <a href="#ofertas" class="btn btn-primary">Compre Agora</a>
+
+                    <!-- Menu Hamburguer (Mobile) -->
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-fire"></i> BLACK FRIDAY
+                    </div>
+                    <h1 class="hero-title">
+                        Black Friday dos Livros<br>
+                        <span class="highlight">Até 70% OFF!</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Milhares de títulos para você aproveitar
+                    </p>
+                    <a href="#ofertas" class="btn btn-hero">
+                        Ver Ofertas
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="book-stack">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador Regressivo -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-wrapper">
+                <h2 class="countdown-title">
+                    <i class="fas fa-clock"></i>
+                    Promoção termina em:
+                </h2>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Dias</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Destaques -->
+    <section class="featured-books" id="ofertas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ofertas Imperdíveis</h2>
+                <p class="section-subtitle">Os melhores livros com descontos incríveis</p>
+            </div>
+
+            <div class="books-grid">
+                <!-- Livro 1 -->
+                <div class="book-card" data-book="1">
+                    <div class="book-badge">-70%</div>
+                    <div class="book-image">
+                        <img src="images/senhor-dos-aneis.jpg" alt="O Senhor dos Anéis" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">O Senhor dos Anéis</h3>
+                        <p class="book-author">J.R.R. Tolkien</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 149,90</span>
+                            <span class="price-new">R$ 44,97</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Livro 2 -->
+                <div class="book-card" data-book="2">
+                    <div class="book-badge">-65%</div>
+                    <div class="book-image">
+                        <img src="images/1984.jpg" alt="1984" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author">George Orwell</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 89,90</span>
+                            <span class="price-new">R$ 31,47</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Livro 3 -->
+                <div class="book-card" data-book="3">
+                    <div class="book-badge">-60%</div>
+                    <div class="book-image">
+                        <img src="images/harry-potter.jpg" alt="Harry Potter e a Pedra Filosofal" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Harry Potter</h3>
+                        <p class="book-author">J.K. Rowling</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 119,90</span>
+                            <span class="price-new">R$ 47,96</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Livro 4 -->
+                <div class="book-card" data-book="4">
+                    <div class="book-badge">-55%</div>
+                    <div class="book-image">
+                        <img src="images/pequeno-principe.svg" alt="O Pequeno Príncipe" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">O Pequeno Príncipe</h3>
+                        <p class="book-author">Antoine de Saint-Exupéry</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 59,90</span>
+                            <span class="price-new">R$ 26,96</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Livro 5 -->
+                <div class="book-card" data-book="5">
+                    <div class="book-badge">-68%</div>
+                    <div class="book-image">
+                        <img src="images/revolucao-bichos.svg" alt="A Revolução dos Bichos" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">A Revolução dos Bichos</h3>
+                        <p class="book-author">George Orwell</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 79,90</span>
+                            <span class="price-new">R$ 25,57</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Livro 6 -->
+                <div class="book-card" data-book="6">
+                    <div class="book-badge">-62%</div>
+                    <div class="book-image">
+                        <img src="images/dom-casmurro.svg" alt="Dom Casmurro" loading="lazy">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Dom Casmurro</h3>
+                        <p class="book-author">Machado de Assis</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-old">R$ 69,90</span>
+                            <span class="price-new">R$ 26,56</span>
+                        </div>
+                        <button class="btn btn-buy">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="benefit-title">Frete Grátis</h3>
+                    <p class="benefit-description">Em compras acima de R$ 99,00</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="benefit-title">Entrega Rápida</h3>
+                    <p class="benefit-description">Receba em até 3 dias úteis</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Pagamento Seguro</h3>
+                    <p class="benefit-description">Seus dados 100% protegidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Final -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Não Perca Esta Oportunidade!</h2>
+                <p class="cta-subtitle">Garanta seus livros favoritos com até 70% de desconto</p>
+                <a href="#ofertas" class="btn btn-cta">
+                    <i class="fas fa-shopping-bag"></i>
+                    Compre Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sobre -->
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <i class="fas fa-book-open"></i>
+                        BookStore
+                    </h3>
+                    <p class="footer-description">
+                        Sua livraria online com os melhores preços e as melhores obras da literatura mundial.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categorias -->
+                <div class="footer-column" id="categorias">
+                    <h4 class="footer-heading">Categorias</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Ficção</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Suspense</a></li>
+                        <li><a href="#">Autoajuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contato do Desenvolvedor</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:mateus-ppereira@outlook.com">mateus-ppereira@outlook.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/dev-mateus" target="_blank" rel="noopener noreferrer">github.com/dev-mateus</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            Aceito projetos freelance
+                        </li>
+                    </ul>
+                    <p class="footer-disclaimer">
+                        ⚠️ Página fictícia para portfólio
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookStore - Página Fictícia para Portfólio | Desenvolvido por <a href="https://github.com/dev-mateus" target="_blank" class="footer-link-dev">Mateus Pereira</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Vista Rápida -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalBookImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-badge" id="modalBadge"></div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-author" id="modalAuthor"></p>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <div class="modal-description">
+                        <h3>Sobre o livro:</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                    <div class="modal-price">
+                        <span class="modal-price-old" id="modalPriceOld"></span>
+                        <span class="modal-price-new" id="modalPriceNew"></span>
+                    </div>
+                    <button class="btn btn-modal-buy" id="modalBuyBtn">
+                        <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

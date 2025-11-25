@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad3)"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">
+    <tspan x="200" dy="0">Dom</tspan>
+    <tspan x="200" dy="60">Casmurro</tspan>
+  </text>
+  <text x="200" y="400" font-size="80" text-anchor="middle">📖</text>
+  <text x="200" y="500" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.8">Machado de Assis</text>
+</svg>
