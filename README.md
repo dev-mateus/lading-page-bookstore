@@ -22,6 +22,17 @@ Landing page responsiva para promoção de Black Friday focada na venda de livro
 - **Contador Regressivo**: Timer dinâmico até o fim da promoção
 - **Interatividade**: Menu mobile, botão voltar ao topo, sistema de notificações
 
+## 🏆 Performance e Qualidade
+
+Esta landing page foi auditada com o **Google Lighthouse** e obteve **excelentes resultados** em todas as categorias:
+
+- 🚀 **Performance**: Carregamento rápido e otimizado
+- ♿ **Accessibility**: Totalmente acessível e inclusiva
+- ✨ **Best Practices**: Segue os padrões modernos de desenvolvimento
+- 🔍 **SEO**: Otimizada para mecanismos de busca
+
+📊 **[Ver Relatório Completo de Performance](LIGHTHOUSE.md)**
+
 ## 📂 Estrutura do Projeto
 
 ```
